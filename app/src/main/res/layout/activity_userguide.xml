@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".Userguide">
 
@@ -18,7 +17,16 @@
             android:layout_width="0dp"
             android:layout_height="match_parent">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/ReturnButton"
+                android:text=" Guidance"
+                android:textColor="#303030"
+                android:textSize="34sp" />
             <Button
+                android:id="@+id/ReturnButton"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_alignParentLeft="true"
@@ -39,233 +47,213 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:layout_width="360dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="When you open the app, you will see the main page at the first glance."
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="15sp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:lineSpacingMultiplier="1.25"
                 android:textColor="#000000" />
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
+
                 <ImageView
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+
+                    android:layout_marginRight="0dp"
                     android:adjustViewBounds="true"
                     android:focusable="true"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mainpage"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:src="@drawable/mainpage" />
+
+
+                <TextView
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="You can choose to either upload an image or take a photo for us to recognize."
-                        android:textSize="15sp"
-                        android:textColor="#000000"/>
-                </LinearLayout>
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="You can choose to \n· upload an image or \n· take a photo.\nThen we will recognize it."
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
             </LinearLayout>
 
             <TextView
-                android:layout_width="360dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="After a picture is uploaded, the application will enter detection interface."
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="15sp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingMultiplier="1.5"
+                android:textSize="17sp"
                 android:textColor="#000000" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="5dp"
                     android:adjustViewBounds="true"
                     android:focusable="true"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/detection1" />
+                    android:src="@drawable/detection1"/>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+
+
+                <TextView
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="You can click on the picture and the app will tell you the color of the selected pixel which will be pointed out using the cross logo."
+                    android:textSize="17sp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="#000000"/>
 
-                    <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="20dp"
-                        android:text="You can click on anywhere of the picture and the app will tell you the color of the pixel you've selected, which will be pointed out using the cross logo."
-                        android:textColor="#000000"
-                        android:textSize="15sp" />
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:text="There are two modes:\n· Pixel detection mode will detect the color of the selected pixel.\n· Blob detection mode will circle out blobs with similar color of the pixel."
+                    android:textSize="17sp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="#000000"/>
+
                 <ImageView
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="5dp"
                     android:adjustViewBounds="true"
                     android:focusable="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/detection"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="There are two modes, pixel detection mode will only detect the color of the selected pixel, blob detection mode will circle out blobs with similar color of the pixel."
-                        android:textSize="15sp"
-                        android:textColor="#000000"/>
-                </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="5dp"
                     android:adjustViewBounds="true"
                     android:focusable="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/detection2"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+
                     <TextView
-                        android:layout_width="180dp"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="There are also two libraries for detection, complex library shows a more specific color name while simple library shows a more common one."
-                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="There are also two libraries for detection:\n· Complex library shows a more specific color name.\n· Simple library shows a more common one."
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
                         android:textColor="#000000"/>
-                </LinearLayout>
+
             </LinearLayout>
 
             <TextView
-                android:layout_width="360dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
                 android:text="You can then click the detail button on the bottom of the detection interface, and you will be directed to the detail page."
                 android:textColor="#000000"
-                android:textSize="15sp" />
+                android:lineSpacingMultiplier="1.5"
+                android:textSize="17sp" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="5dp"
                     android:adjustViewBounds="true"
                     android:focusable="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/detail"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+
                     <TextView
-                        android:layout_width="180dp"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:text="The detail page shows where the color is on a HSL diagram and gives color matching advises, including complementary colors, monochromatic colors, analogous colors, and triadic colors."
-                        android:textSize="15sp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
                         android:textColor="#000000"/>
-                </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:layout_width="360dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Also, if you click the 'i' button on the top-right corner, you will enter feedback page."
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="15sp"
+                android:text="Also, if you click the &quot;i&quot; button on the top-right corner, you will enter &quot;About Us&quot; page."
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:lineSpacingMultiplier="1.5"
                 android:textColor="#000000" />
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="20dp"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="5dp"
                     android:adjustViewBounds="true"
                     android:focusable="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/feedback"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+
                     <TextView
-                        android:layout_width="180dp"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="The feedback page shows the members of our team and how to contact us if you have any problem or suggestion."
-                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="The &quot;About Us&quot; page shows the members of our team and how to contact us if you have any problem or suggestion."
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
                         android:textColor="#000000"/>
-                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
