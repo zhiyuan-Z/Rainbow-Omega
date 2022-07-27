@@ -476,7 +476,9 @@ public class DetailActivity extends AppCompatActivity {
         Log.i("Hex",r_str + g_str + b_str);
         return r_str + g_str + b_str;
     }
-
+    public void startMain(View view) {
+        startActivity(new Intent(this, MainPage.class));
+    }
     public void startFeedback(View view){
         startActivity(new Intent(this, Feedback.class));
     }
