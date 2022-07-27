@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/zhiyuan/Documents/JI/22SU/ECE4800J/RainbowOmega/app/src/main/res/layout-land/color_detection_surface_view.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/zhiyuan/Documents/JI/22SU/ECE4800J/RainbowOmega/app/src/main/res/layout-land/new_color_blob_detection_surface_view.xml" value="0.3386243386243386" />
+        <entry key="..\:/Users/zhiyuan/Documents/JI/22SU/ECE4800J/RainbowOmega/app/src/main/res/layout/activity_detail.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/zhiyuan/Documents/JI/22SU/ECE4800J/RainbowOmega/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/zhiyuan/Documents/JI/22SU/ECE4800J/RainbowOmega/app/src/main/res/layout/color_detection_surface_view.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/zhiyuan/Documents/JI/22SU/ECE4800J/RainbowOmega/app/src/main/res/layout/content_detail.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/zhiyuan/Documents/JI/22SU/ECE4800J/RainbowOmega/app/src/main/res/layout/main_page_view.xml" value="0.4" />
+        <entry key="..\:/Users/zhiyuan/Documents/JI/22SU/ECE4800J/RainbowOmega/app/src/main/res/layout/new_color_blob_detection_surface_view.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
